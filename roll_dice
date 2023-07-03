@@ -1,0 +1,21 @@
+import random
+def dice():
+    small = 1
+    big = 6
+    while True:
+        dice_number = random.randint(small,big)
+        print("Number:", dice_number)
+        roll_again = input("Do you want to roll the dice again? (yes/no): ")
+        if roll_again.lower() == "yes" or roll_again.lower() == "y":
+            continue
+        else:
+            break
+
+print("Roll the dice")
+dice()
+output:
+Roll the dice
+Number: 1
+Do you want to roll the dice again? (yes/no): yes
+Number: 3
+Do you want to roll the dice again? (yes/no): no
